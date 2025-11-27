@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo del documento-->
+    <title>TacoPalace 🌮</title>
+    <!-- Autor del documento-->
+    <meta name="author" content="raquel.parra.roldan@gmail.com" />
+    <!-- Descripcion del documento-->
+    <meta name="description" content="TacoPalace" />
+    <!-- Estilos css-->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- Contenedor principal de la barra de navegación -->
+
+      <div class="logo">
+        <!-- Sección del logo de la página -->
+
+        <img
+          src="resources/images/logo.png"
+          alt="logo TacoPalace"
+          class="logo-icon"
+        />
+        <!-- Imagen del logo -->
+
+        <span class="logo-taco">Taco</span>
+        <!-- Primera parte del nombre del sitio -->
+
+        <span class="logo-palace">Palace</span>
+        <!-- Segunda parte del nombre del sitio -->
+      </div>
+
+      <div class="side">
+        <!-- Contenedor lateral donde van el login y el carrito -->
+
+        <form class="login-form" id="loginForm">
+          <!-- Formulario para iniciar sesión -->
+
+          <label for="email" class="sr-only">Correo Electrónico</label>
+          <!-- Etiqueta accesible solo para lectores de pantalla -->
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <!-- Campo de entrada para el correo electrónico (obligatorio) -->
+
+          <button type="submit" class="btn-accent">Iniciar sesión</button>
+          <!-- Botón para enviar el formulario -->
+        </form>
+
+        <div class="cart-container">
+          <!-- Contenedor del carrito de compras -->
+
+          <span class="cart-icon">🛒</span>
+          <!-- Ícono del carrito -->
+
+          <span class="cart-count" id="cartCount">0</span>
+          <!-- Contador de productos en el carrito -->
+
+          <div class="cart-summary" id="cartSummary">
+            <!-- Resumen desplegable del carrito -->
+
+            <h4>Tu Pedido</h4>
+            <!-- Título del resumen -->
+
+            <ul id="cartItemsList">
+              <!-- Lista de productos dentro del carrito -->
+
+              <li>El carrito está vacío.</li>
+              <!-- Mensaje por defecto cuando no hay productos -->
+            </ul>
+
+            <p class="summary-total">
+              <!-- Contenedor del total a pagar -->
+
+              Total: <span id="cartTotalPrice">$0.000</span>
+              <!-- Valor total del carrito -->
+            </p>
+
+            <button class="btn-checkout">Comprar</button>
+            <!-- Botón para ir al proceso de compra -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Contenedor principal del contenido de la página -->
+
+      <section class="menu-categories">
+        <!-- Sección que contiene las categorías del menú -->
+
+        <div class="category-list">
+          <!-- Lista que agrupa todas las tarjetas de categorías -->
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/enchiladas.jpg"
+              alt="Enchiladas"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Enchiladas</p>
+            <!-- Nombre de la categoría -->
+          </article>
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/tacos.jpg"
+              alt="Tacos"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Tacos</p>
+            <!-- Nombre de la categoría -->
+          </article>
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/flautas.jpg"
+              alt="Flautas"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Flautas</p>
+            <!-- Nombre de la categoría -->
+          </article>
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/gorditas.jpg"
+              alt="Gorditas"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Gorditas</p>
+            <!-- Nombre de la categoría -->
+          </article>
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/tostadas.jpg"
+              alt="Tostadas"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Tostadas</p>
+            <!-- Nombre de la categoría -->
+          </article>
+
+          <article class="category-card">
+            <!-- Tarjeta individual de categoría -->
+
+            <img
+              src="resources/images/enfrijoladas.jpg"
+              alt="Enfrijoladas"
+              class="category-img"
+            />
+            <!-- Imagen representativa de la categoría -->
+
+            <p class="category-name">Enfrijoladas</p>
+            <!-- Nombre de la categoría -->
+          </article>
+        </div>
+      </section>
+
+      <div class="highlight-layout">
+        <!-- Contenedor principal para la sección destacada y el sidebar -->
+
+        <div class="hero-section">
+          <!-- Sección destacada principal del sitio -->
+
+          <div class="text-content">
+            <!-- Contenedor del texto principal -->
+
+            <h1>La mejor variedad en platillos de comida mexicana</h1>
+            <!-- Título principal de la sección -->
+
+            <p>
+              Contamos con <span class="highlight">servicio a domicilio</span>
+            </p>
+            <!-- Texto destacado con una frase resaltada -->
+          </div>
+
+          <div class="image-area">
+            <!-- Contenedor de la imagen destacada -->
+
+            <img
+              src="resources/images/comida-mexicana-01.jpg"
+              alt="Platillos de comida mexicana con chilaquiles y pastas."
+              id="comida-mexicana"
+            />
+            <!-- Imagen principal que acompaña el texto -->
+          </div>
+        </div>
+
+        <aside class="recommended-sidebar">
+          <!-- Barra lateral con productos recomendados -->
+
+          <h3>Recomendados</h3>
+          <!-- Título de la sección -->
+
+          <article class="recommended-card">
+            <!-- Tarjeta individual de producto recomendado -->
+
+            <img
+              src="resources/images/orden-tacos.jpg"
+              alt="Orden de tacos"
+              class="recommended-img"
+            />
+            <!-- Imagen del producto recomendado -->
+
+            <div class="recommended-info">
+              <!-- Contenedor de la información del producto -->
+
+              <div class="info">
+                <!-- Subcontenedor con nombre, precio y enlace -->
+
+                <p class="recommended-name">Orden de tacos</p>
+                <!-- Nombre del producto -->
+
+                <p class="item-price">$10.000</p>
+                <!-- Precio del producto -->
+
+                <a href="#">Ver más...</a>
+                <!-- Enlace para ver más detalles -->
+              </div>
+
+              <button
+                class="btn-add-to-cart"
+                data-item-id="tacos"
+                data-price="10.000"
+              >
+                +
+              </button>
+              <!-- Botón para agregar el producto al carrito -->
+            </div>
+          </article>
+
+          <article class="recommended-card">
+            <!-- Tarjeta individual de producto recomendado -->
+
+            <img
+              src="resources/images/orden-flautas.jpg"
+              alt="Orden de flautas"
+              class="recommended-img"
+            />
+            <!-- Imagen del producto recomendado -->
+
+            <div class="recommended-info">
+              <!-- Contenedor de la información del producto -->
+
+              <div class="info">
+                <!-- Subcontenedor con nombre, precio y enlace -->
+
+                <p class="recommended-name">Orden de flautas</p>
+                <!-- Nombre del producto -->
+
+                <p class="item-price">$12.500</p>
+                <!-- Precio del producto -->
+
+                <a href="#">Ver más...</a>
+                <!-- Enlace para ver más detalles -->
+              </div>
+
+              <div class="button">
+                <!-- Contenedor del botón para agregar al carrito -->
+
+                <button
+                  class="btn-add-to-cart"
+                  data-item-id="flautas"
+                  data-price="12.500"
+                >
+                  +
+                </button>
+                <!-- Botón para agregar al carrito -->
+              </div>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <!-- Contenedor principal del pie de página -->
+
+      <p>
+        <!-- Texto descriptivo del pie -->
+
+        2025 Skillnest - Desarrollada por
+        <!-- Información del desarrollador -->
+
+        <a href="mailto:raquel.parra.roldan@gmail.com">
+          <!-- Enlace que abre el cliente de correo para escribir al desarrollador -->
+
+          raquel.parra.roldan@gmail.com
+          <!-- Dirección de correo mostrada al usuario -->
+        </a>
+      </p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
