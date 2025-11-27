@@ -1,6 +1,6 @@
+<img width="1920" height="1303" alt="screencapture-127-0-0-1-5500-index-html-2025-11-27-19_11_21" src="https://github.com/user-attachments/assets/964c18b5-8d7c-4275-a23f-334113df119a" />
+
 ✨ Skillnest – Sistema Interactivo de Login, Carrito y UI
-
-
 Un proyecto funcional que integra sistema de inicio de sesión, carrito dinámico, efectos amigables de UI y lógica limpia organizada en módulos.
 Diseñado para ser escalable, legible y fácil de mantener.
 
